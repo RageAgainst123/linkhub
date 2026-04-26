@@ -464,6 +464,25 @@ input,select,textarea{font-size:16px}
   .main{padding:18px 12px 50px}
 }
 
+/* ============ MITMACHEN-TAB ============ */
+.mitmachen-hero{background:linear-gradient(135deg,#00897B,#00695C);color:#fff;border-radius:16px;padding:48px 56px;margin-bottom:28px;position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(0,137,123,0.18)}
+.mitmachen-hero__label{font-size:13px;letter-spacing:0.22em;text-transform:uppercase;font-weight:700;opacity:0.85;margin-bottom:16px}
+.mitmachen-hero__h{font-family:'Fraunces',Georgia,serif;font-weight:500;font-size:42px;line-height:1.1;margin-bottom:16px;letter-spacing:-0.01em}
+.mitmachen-hero__p{font-size:20px;line-height:1.5;max-width:780px;margin-bottom:32px;opacity:0.95}
+.mitmachen-hero__btn{display:inline-flex;align-items:center;gap:14px;background:#fff;color:#00695C;padding:18px 34px;border-radius:10px;font-size:20px;font-weight:600;text-decoration:none;transition:transform .15s ease;font-family:inherit}
+.mitmachen-hero__btn:hover{transform:translateX(4px)}
+.mitmachen-hero__arrow{font-size:24px;font-weight:700}
+.mitmachen-hero__hint{margin-top:22px;font-size:16px;opacity:0.85;font-style:italic}
+.mitmachen-note{background:#F0FDF9;border-left:4px solid #00897B;padding:20px 26px;border-radius:6px;font-size:17px;line-height:1.6;color:#1a1a1a}
+.mitmachen-note b{color:#0D1B2A}
+
+@media (max-width:720px){
+  .mitmachen-hero{padding:32px 26px}
+  .mitmachen-hero__h{font-size:28px}
+  .mitmachen-hero__p{font-size:17px}
+  .mitmachen-hero__btn{padding:14px 24px;font-size:17px}
+}
+
 </style>
 </head>
 <body>
@@ -541,6 +560,7 @@ input,select,textarea{font-size:16px}
       <button class="tab-btn" data-tab="tests" role="tab"><span class="tab-btn__emoji">📝</span><span class="tab-btn__label">Selbsttests</span></button>
       <button class="tab-btn" data-tab="quiz" role="tab"><span class="tab-btn__emoji">🧠</span><span class="tab-btn__label">Quiz</span></button>
       <button class="tab-btn" data-tab="fortbildung" role="tab"><span class="tab-btn__emoji">🎓</span><span class="tab-btn__label">Fortbildung</span></button>
+      <button class="tab-btn" data-tab="mitmachen" role="tab"><span class="tab-btn__emoji">✏️</span><span class="tab-btn__label">Mitmachen</span></button>
     </div>
   </div>
 </nav>
@@ -3671,6 +3691,29 @@ Lösungsschlüssel separat.</div>
       <div class="card__desc">Bildungsplattform Österreich: Portale, News, Material.</div>
       <div class="card__meta"><span class="chip">VS + MS</span><span class="chip chip--free">kostenlos</span></div>
     </a>
+  </div>
+</section>
+
+<!-- ============ MITMACHEN ============ -->
+<section class="tab-panel" data-panel="mitmachen" id="panel-mitmachen" role="tabpanel">
+  <div class="panel-head">
+    <h2 class="panel-title">Mitmachen — gemeinsames Dokument.</h2>
+    <p class="panel-sub">Ein Klick, kein Konto. Feedback, Links und Notizen direkt eintragen — alle gleichzeitig.</p>
+  </div>
+
+  <div class="mitmachen-hero">
+    <div class="mitmachen-hero__label">SEMINAR-PINNWAND</div>
+    <h3 class="mitmachen-hero__h">Tippt rein, was euch durch den Kopf geht.</h3>
+    <p class="mitmachen-hero__p">Fragen, Links, Anregungen, Feedback. Es bleibt erhalten — ich sehe es auch nach dem Seminar.</p>
+    <a class="mitmachen-hero__btn" href="https://docs.google.com/document/d/16oZevN7IHxFN1j3AjGHH-0V8h6EBfW39po53q6XqhoQ/edit?usp=sharing" target="_blank" rel="noopener">
+      <span>Google Doc öffnen</span>
+      <span class="mitmachen-hero__arrow">→</span>
+    </a>
+    <p class="mitmachen-hero__hint">Kein Login nötig. Einfach Link öffnen, schreiben, fertig.</p>
+  </div>
+
+  <div class="mitmachen-note">
+    <b>So funktioniert's:</b> Der Link führt direkt in ein gemeinsames Google-Dokument. Ihr seht alle Beiträge live, könnt Fragen stellen, Links posten oder Notizen machen. Anonym, ohne Anmeldung — einfach reinschreiben.
   </div>
 </section>
 
